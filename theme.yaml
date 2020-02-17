@@ -1,7 +1,7 @@
 name: 'Jagu Venus'
 author: 'Jagu s.r.o.'
 homepage: 'www.jagu.cz'
-description: 'October CMS plugin for Jagu Venus theme'
+description: 'Jagu Venus theme for October CMS'
 code: jagu-venus-oc-theme
 form: config/theme.yaml
 require:
