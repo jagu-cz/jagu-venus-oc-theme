@@ -1,0 +1,33 @@
+<header id="header">
+    <nav class="container navbar navbar-expand-lg {{ navbarStyle }}">
+        <a class="navbar-brand" href="/">
+            {% if this.theme.nav_logo %}
+                <img src="{{ this.theme.nav_logo.getPath() }}"
+                     height="{{ this.theme.nav_logo_height }}"
+                     alt="{{ this.theme.nav_logo.title }}"
+                >
+            {% endif %}
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarContent"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                {% for item in staticMenu.menuItems %}
+                    <li class="nav-item">
+                        <a href="{{ item.url }}"
+                           class="nav-link {% if item.isActive %}active{% endif %}"
+                        >
+                            {{ item.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</header>

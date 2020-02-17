@@ -1,0 +1,15 @@
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            {% for col in this.theme.footer_cols %}
+                <div class="{{ col.footer_col_size }}">
+                    {{ col.footer_col_text|raw }}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="footer-delimiter"></div>
+        <div class="copyright">
+            Theme created by <a class="jagulogo-jagu-line" href="http://jagu.cz/">Jagu s.r.o.</a>
+        </div>
+    </div>
+</footer>

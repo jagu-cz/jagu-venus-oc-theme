@@ -1,0 +1,31 @@
+{
+    "name": "october/oc-jagu-venus-theme",
+    "type": "october-theme",
+    "description": "Jagu Venus Theme",
+    "keywords": [
+        "october",
+        "cms",
+        "theme",
+        "jagu",
+        "venus"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jagu s.r.o.",
+            "email": "jagu@jagu.cz",
+            "homepage": "https://jagu.cz",
+            "role": "owner"
+        },
+        {
+            "name": "Marek Erben",
+            "email": "erben.marek@gmail.com",
+            "homepage": "https://marekerben.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "~1.0"
+    }
+}

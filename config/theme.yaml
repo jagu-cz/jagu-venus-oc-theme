@@ -1,0 +1,71 @@
+tabs:
+    fields:
+        ####################################################
+        # Tab: General
+        ####################################################
+        general_section:
+            tab: General
+            label: General
+            type: section
+        general_site_name:
+            tab: General
+            label: Site name
+            type: text
+        general_favicon:
+            tab: General
+            label: Favicon
+            type: fileupload
+            mode: image
+            imageWidth: 300
+            mimeTypes: png
+        ####################################################
+        # Tab: Nav
+        ####################################################
+        nav_section:
+            tab: Menu
+            label: Menu
+            type: section
+        nav_logo:
+            tab: Menu
+            label: Logo
+            type: fileupload
+            mode: image
+            span: left
+        nav_logo_height:
+            tab: Menu
+            label: Logo height
+            type: number
+            default: 40
+            span: right
+        ####################################################
+        # Tab: Footer
+        ####################################################
+        footer_section:
+            tab: Footer
+            label: Footer
+            type: section
+        footer_cols_section:
+            tab: Footer
+            label: Content
+            type: section
+        footer_cols:
+            tab: Footer
+            prompt: Add content
+            titleFrom: footer_col_section
+            type: repeater
+            form:
+                fields:
+                    footer_col_size:
+                        label: Size
+                        type: balloon-selector
+                        span: full
+                        options:
+                            col-lg-12 col-md-12: Full-width
+                            col-lg-6 col-md-12: 1/2 of width
+                            col-lg-4 col-md-12: 1/3 of width
+                            col-lg-3 col-md-12: 1/4 of width
+                    footer_col_text:
+                        label: Content
+                        type: richeditor
+                        size: small
+                        span: full
